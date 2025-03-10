@@ -70,7 +70,7 @@ function App() {
                 onClick={() => setIsFormOpen(true)}
                 className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md shadow-sm text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
               >
-                <Plus className="h-5 w-5 mr-2" />
+                <div className="h-5 w-5 mr-2" />
                 Adicionar número
               </button>
             </div>
@@ -82,7 +82,7 @@ function App() {
               {(isFormOpen || editingProduct) && (
                 <div className="mb-8 bg-white shadow rounded-lg p-6">
                   <h2 className="text-lg font-medium mb-4">
-                    {editingProduct ? 'Editar Número' : 'Adicionar Novo Número'}
+                    {editingProduct ? 'Editar Número' : ''}
                   </h2>
                   <ProductForm
                     product={editingProduct}
